@@ -25,7 +25,6 @@ fscan GUI是基于PyQt5开发的fscan图形界面工具，将fscan的命令行�
 
 ## 安装和使用
 
-### 方式一：直接运行Python脚本
 1. 确保安装了Python 3.6+和PyQt5
 2. 安装依赖：
    ```bash
@@ -36,9 +35,6 @@ fscan GUI是基于PyQt5开发的fscan图形界面工具，将fscan的命令行�
    python fscan_gui.py
    ```
 
-### 方式二：使用打包好的可执行文件
-1. 直接运行`dist/fscan_gui.exe`（Windows平台）
-2. 确保fscan可执行文件与GUI在同一目录，或在系统设置中指定路径
 
 ## 主要功能模块说明
 
@@ -59,28 +55,6 @@ fscan GUI是基于PyQt5开发的fscan图形界面工具，将fscan的命令行�
 - **输出设置**：输出文件、输出格式、禁用结果保存等
 - **显示设置**：静默模式、彩色输出、日志级别等
 
-## 打包说明
-
-如果需要自行打包，可以使用PyInstaller：
-
-1. 安装PyInstaller：
-   ```bash
-   pip install pyinstaller
-   ```
-
-2. 打包命令：
-   ```bash
-   pyinstaller -F -w --name=fscan_gui fscan_gui.py
-   ```
-
-3. 打包结果：
-   - 生成的可执行文件位于`dist/fscan_gui.exe`
-   - `-F`：生成单个可执行文件
-   - `-w`：不显示控制台窗口
-
-## 许可证
-
-本项目基于fscan开发，遵循原项目的许可证协议。
 
 ## 注意事项
 
@@ -89,11 +63,6 @@ fscan GUI是基于PyQt5开发的fscan图形界面工具，将fscan的命令行�
 3. 对于大规模扫描，建议调整线程数以避免系统资源占用过高
 4. 暴力破解功能请在合法授权下使用
 
-## 联系方式
-
-如有问题或建议，欢迎提交Issue或Pull Request。
-
----
 
 **fscan官网**：[https://fscan.club/](https://fscan.club/)
 **fscan GitHub**：[https://github.com/shadow1ng/fscan](https://github.com/shadow1ng/fscan)
